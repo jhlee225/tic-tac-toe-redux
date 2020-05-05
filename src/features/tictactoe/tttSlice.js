@@ -15,7 +15,6 @@ export const tttSlice = createSlice({
   },
   reducers: {
     jumpTo: (state, action) => {
-      console.log(state.stepNumber === action.payload.move);
       if (state.stepNumber !== action.payload.move) {
         state.winner = null;
       }
@@ -52,7 +51,10 @@ export const tttSlice = createSlice({
           action.payload.squares[a] === action.payload.squares[b] &&
           action.payload.squares[a] === action.payload.squares[c]
         ) {
-          state.winner = action.payload.squares[a];
+          state.winner = {
+            winner: action.payload.squares[a],
+            reason: [a, b, c],
+          };
         }
       }
     },
