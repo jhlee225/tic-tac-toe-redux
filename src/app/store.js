@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import tttReducer from "../features/tictactoe/tttSlice";
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    ttt: tttReducer,
   },
 });
