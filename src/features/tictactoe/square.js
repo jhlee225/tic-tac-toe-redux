@@ -32,11 +32,17 @@ function Square(props) {
   return (
     <button
       className={
-        selected[stepNumber] === rowCol[id]
-          ? "squareSelecting"
-          : value === null
+        winner === null
+          ? history[stepNumber].squares.indexOf(null) < 0
+            ? "squareSelecting"
+            : value === null
+            ? "square"
+            : selected[stepNumber] === rowCol[id]
+            ? "squareSelecting"
+            : "squareSelected"
+          : winner.reason.indexOf(id) < 0
           ? "square"
-          : "squareSelected"
+          : "squareSelecting"
       }
       id={id}
       onClick={(e) => squareClick(e)}

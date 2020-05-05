@@ -27,7 +27,9 @@ function Game(props) {
 
   let status;
   status = winner
-    ? "Winner: " + winner
+    ? "Winner: " + winner.winner
+    : history[stepNumber].squares.indexOf(null) < 0
+    ? "Draw!"
     : "Next player: " + (xIsNext ? "X" : "O");
 
   const state = {
