@@ -3,12 +3,13 @@ import { connect } from "react-redux";
 import { calculateWinner, handleClick } from "./tttSlice";
 
 function Square(props) {
-  const { winner, history, stepNumber, xIsNext } = props;
+  const { winner, history, stepNumber, xIsNext, selected } = props;
   const { id, value, calculateWinner, handleClick } = props;
   function squareClick(i) {
     const temp = history.slice(0, stepNumber + 1);
     const current = temp[temp.length - 1];
     const squares = current.squares.slice();
+    const rowCol = ["A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3"];
     calculateWinner({ squares });
     console.log(winner);
     if (winner || squares[i.target.id]) {
@@ -21,6 +22,7 @@ function Square(props) {
           squares: squares,
         },
       ]),
+      selected: selected.concat([rowCol[i.target.id]]),
       stepNumber: history.length,
       xIsNext: !xIsNext,
     };
@@ -37,6 +39,7 @@ function Square(props) {
 function mapStateToProps(state) {
   return {
     history: state.ttt.history,
+    selected: state.ttt.selected,
     stepNumber: state.ttt.stepNumber,
     xIsNext: state.ttt.xIsNext,
     winner: state.ttt.winner,
