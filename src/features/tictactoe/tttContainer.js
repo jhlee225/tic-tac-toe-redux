@@ -8,7 +8,6 @@ function Game(props) {
   const { handleHistory, jumpTo, deleteSelected } = props;
   const current = history[stepNumber];
   const moves = history.map((step, move) => {
-    console.log(step);
     const desc = move ? "Go to move #" + move : "Go to game start";
     return (
       <li key={move}>

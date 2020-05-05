@@ -17,7 +17,8 @@ ul {
 .status {
   margin-bottom: 10px;
 }
-
+.squareSelecting,
+.squareSelected,
 .square {
   background: #fff;
   border: 1px solid #999;
@@ -33,6 +34,12 @@ ul {
   width: 34px;
 }
 
+.squareSelecting {
+  background-color: crimson;
+}
+.squareSelected {
+  background-color: skyblue;
+}
 .square:focus {
   outline: none;
 }
