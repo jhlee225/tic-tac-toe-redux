@@ -6,23 +6,23 @@ function Square(props) {
   const { winner, history, stepNumber, xIsNext, selected } = props;
   const { id, value, calculateWinner, handleClick } = props;
   const rowCol = ["A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3"];
-  function squareClick(i) {
+  function squareClick(e) {
     const temp = history.slice(0, stepNumber + 1);
     const current = temp[temp.length - 1];
     const squares = current.squares.slice();
     calculateWinner({ squares });
-    if (winner || squares[i.target.id]) {
+    if (winner || squares[e.target.id]) {
       return;
     }
-    squares[i.target.id] = xIsNext ? "X" : "O";
-    i.target.className = "squareSelecting";
+    squares[e.target.id] = xIsNext ? "X" : "O";
+    e.target.className = "squareSelecting";
     const state = {
       history: temp.concat([
         {
           squares: squares,
         },
       ]),
-      selected: selected.concat([rowCol[i.target.id]]),
+      selected: selected.concat([rowCol[e.target.id]]),
       stepNumber: history.length,
       xIsNext: !xIsNext,
     };
@@ -41,7 +41,7 @@ function Square(props) {
             ? "squareSelecting"
             : "squareSelected"
           : winner.reason.indexOf(id) < 0
-          ? "square"
+          ? "squareSelected"
           : "squareSelecting"
       }
       id={id}

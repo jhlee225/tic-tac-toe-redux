@@ -1,7 +1,7 @@
 import React from "react";
 import Square from "./square";
 function Presenter(props) {
-  const { current, status, moves } = props.state;
+  const { current, status, moves, handleChecked } = props.state;
   function renderSquare(i) {
     return <Square id={i} value={current.squares[i]} />;
   }
@@ -27,7 +27,13 @@ function Presenter(props) {
         </div>
       </div>
       <div className="game-info">
-        <div>{status}</div>
+        <div>
+          <div>{status}</div>
+          <label className="switch">
+            <input type="checkbox" onChange={(e) => handleChecked(e)} />
+            <span className="slider round"></span>
+          </label>
+        </div>
         <ol>{moves}</ol>
       </div>
     </div>
