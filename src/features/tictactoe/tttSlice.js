@@ -8,6 +8,7 @@ export const tttSlice = createSlice({
         squares: Array(9).fill(null),
       },
     ],
+    toggleChecked: false,
     selected: [""],
     stepNumber: 0,
     xIsNext: true,
@@ -23,6 +24,9 @@ export const tttSlice = createSlice({
     },
     handleHistory: (state, action) => {
       state.history = action.payload.history;
+    },
+    handleToggle: (state, action) => {
+      state.toggleChecked = action.payload.checked;
     },
     deleteSelected: (state, action) => {
       state.selected = state.selected.slice(0, action.payload.move + 1);
@@ -67,6 +71,7 @@ export const {
   handleHistory,
   calculateWinner,
   deleteSelected,
+  handleToggle,
 } = tttSlice.actions;
 
 export const selecthistory = (state) => state.ttt.value;
