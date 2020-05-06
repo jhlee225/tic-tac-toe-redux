@@ -14,7 +14,7 @@ React 자습서 (https://ko.reactjs.org/tutorial/tutorial.html) 에 내용 中
 위 내용을 보고, 제공된 Tic-Tac-Toe 코드를 React-Redux + Hooks 로 바꾸어 위 기능을 추가하면서 PR 연습 및 React-Redux 연습
 
 ## PR 기록
-
+https://github.com/jhlee225/tic-tac-toe-redux/pulls?q=is%3Apr+is%3Aclosed
 (실수로 Revert 했거나 logo 사진 제거 등 을 제외한 PR 기록)
 
 ## `#0 Redux Tic-Tac-Toe`
