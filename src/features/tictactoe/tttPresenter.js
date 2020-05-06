@@ -2,30 +2,24 @@ import React from "react";
 import Square from "./square";
 function Presenter(props) {
   const { current, status, moves, handleChecked } = props.state;
+  const boardRows = ["A", "B", "C"];
+  const boards = boardRows.map((row, rowNum) => makeBoard(row, rowNum));
+  function makeBoard(row, rowNum) {
+    const boardCols = [0, 1, 2];
+    return (
+      <div key={row}>
+        <div className="board-row">
+          {boardCols.map((col, colNum) => renderSquare(rowNum * 3 + colNum))}
+        </div>
+      </div>
+    );
+  }
   function renderSquare(i) {
-    return <Square id={i} value={current.squares[i]} />;
+    return <Square key={i} id={i} value={current.squares[i]} />;
   }
   return (
     <div className="game">
-      <div className="game-board">
-        <div>
-          <div className="board-row">
-            {renderSquare(0)}
-            {renderSquare(1)}
-            {renderSquare(2)}
-          </div>
-          <div className="board-row">
-            {renderSquare(3)}
-            {renderSquare(4)}
-            {renderSquare(5)}
-          </div>
-          <div className="board-row">
-            {renderSquare(6)}
-            {renderSquare(7)}
-            {renderSquare(8)}
-          </div>
-        </div>
-      </div>
+      <div className="game-board">{boards}</div>
       <div className="game-info">
         <div>
           <div>{status}</div>
