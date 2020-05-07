@@ -29,18 +29,22 @@ React 자습서의 Class형 코드를 Hooks 와 Redux를 가미한 코드로 수
 
 ## `#2 Plus Position Showed`
 
+<img src="./ReadMe/MoveLoc.jpg">
 이동 기록 목록에서 (행,열) 로 각 이동의 위치 표시
 
 ## `#4 Focus On Selecting`
 
+<img src="./ReadMe/Selecting.jpg">
 선택한 사각형 강조
 
 ## `#8 Draw Judge`
 
+<img src="./ReadMe/DrawAndWin.jpg">
 무승부 판정 및 승리 판정시 승리한 이유인 사각형 강조
 
 ## `#9 Make Toggle Button`
 
+<img src="./ReadMe/ToggleBtn.jpg">
 토글 버튼을 만들어 이동순서를 오름차순/내림차순 정렬
 
 ## `#10 Remove Hard Coding`
