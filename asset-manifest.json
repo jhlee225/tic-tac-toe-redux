@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/jhlee225.github.io/tic-tac-toe-redux/static/js/main.89377c17.chunk.js",
+    "main.js.map": "/jhlee225.github.io/tic-tac-toe-redux/static/js/main.89377c17.chunk.js.map",
+    "runtime-main.js": "/jhlee225.github.io/tic-tac-toe-redux/static/js/runtime-main.67eef77c.js",
+    "runtime-main.js.map": "/jhlee225.github.io/tic-tac-toe-redux/static/js/runtime-main.67eef77c.js.map",
+    "static/js/2.e569dfa2.chunk.js": "/jhlee225.github.io/tic-tac-toe-redux/static/js/2.e569dfa2.chunk.js",
+    "static/js/2.e569dfa2.chunk.js.map": "/jhlee225.github.io/tic-tac-toe-redux/static/js/2.e569dfa2.chunk.js.map",
+    "index.html": "/jhlee225.github.io/tic-tac-toe-redux/index.html",
+    "precache-manifest.0d7d90240b1e38c783988a4f83e3ec1c.js": "/jhlee225.github.io/tic-tac-toe-redux/precache-manifest.0d7d90240b1e38c783988a4f83e3ec1c.js",
+    "service-worker.js": "/jhlee225.github.io/tic-tac-toe-redux/service-worker.js",
+    "static/js/2.e569dfa2.chunk.js.LICENSE.txt": "/jhlee225.github.io/tic-tac-toe-redux/static/js/2.e569dfa2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67eef77c.js",
+    "static/js/2.e569dfa2.chunk.js",
+    "static/js/main.89377c17.chunk.js"
+  ]
+}
