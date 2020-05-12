@@ -13,7 +13,8 @@ React 자습서 (https://ko.reactjs.org/tutorial/tutorial.html) 에 내용 中
 - 승자가 정해지면 승부의 원인이 된 세 개의 사각형을 강조해주세요.
 - 승자가 없는 경우 무승부라는 메시지를 표시해주세요.
 
-위 내용을 보고, 제공된 Tic-Tac-Toe 코드를 React-Redux + Hooks 로 바꾸어 위 기능을 추가하면서 PR 연습 및 React-Redux 연습
+위 내용을 보고, 제공되있던 Tic-Tac-Toe 코드를 React-Redux + Hooks 로 바꾸어 위 기능을 추가하면서 
+PR 을 연습하며, React App 깃허브 페이지 배포, React-Redux Tic-Tac-Toe 프로젝트를 시작하였습니다.
 
 ## PR 기록
 
@@ -57,6 +58,6 @@ Board 재 작성
 
 - Code Refactorying
 
-## GitHub page
+## GitHub page 배포완료
 
 https://jhlee225.github.io/tic-tac-toe-redux/ 에서 실행 결과를 확인 할 수 있습니다
