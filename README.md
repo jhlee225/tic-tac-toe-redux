@@ -4,7 +4,9 @@ React 자습서 (https://ko.reactjs.org/tutorial/tutorial.html) 에 내용 中
 
 자습서 최종 결과 : https://codepen.io/gaearon/pen/gWWZgR?editors=0010
 
-시간이 더 있거나 새로운 React 기술을 연습하고 싶은 경우 다음과 같이 난이도를 높일 수 있는 틱택토 게임 개선 아이디어를 구현해보세요.
+시간이 더 있거나 새로운 React 기술을 연습하고 싶은 경우 
+
+다음과 같이 난이도를 높일 수 있는 틱택토 게임 개선 아이디어를 구현해보세요.
 
 - 이동 기록 목록에서 특정 형식(행, 열)으로 각 이동의 위치를 표시해주세요.
 - 이동 목록에서 현재 선택된 아이템을 굵게 표시해주세요.
@@ -14,6 +16,7 @@ React 자습서 (https://ko.reactjs.org/tutorial/tutorial.html) 에 내용 中
 - 승자가 없는 경우 무승부라는 메시지를 표시해주세요.
 
 위 내용을 보고, 제공되있던 Tic-Tac-Toe 코드를 React-Redux + Hooks 로 바꾸어 위 기능을 추가하면서 
+
 PR 을 연습하며, React App 깃허브 페이지 배포, React-Redux Tic-Tac-Toe 프로젝트를 시작하였습니다.
 
 ## PR 기록
