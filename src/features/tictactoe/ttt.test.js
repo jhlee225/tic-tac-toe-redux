@@ -15,28 +15,22 @@ it("Renders Game", () => {
 });
 
 describe("Clicks", () => {
-  it("Click a center square", () => {
-    const gameRendered = render(
-      <Provider store={store}>
-        <Game />
-      </Provider>
-    );
-    const centerSquare = gameRendered.getAllByRole("button")[5];
-    fireEvent.click(centerSquare);
+  const gameRendered = render(
+    <Provider store={store}>
+      <Game />
+    </Provider>
+  );
+  const centerSquare = gameRendered.getAllByRole("button")[4];
+  const rightSquare = gameRendered.getAllByRole("button")[5];
+  const leftSquare = gameRendered.getAllByRole("button")[3];
+  const GoToGameStart = gameRendered.getByText("Go to game start");
+  expect(gameRendered.container).toMatchSnapshot();
+  fireEvent.click(centerSquare);
+
+  const GoToMove = gameRendered.getByText("Go to move #1");
+  it("Click Go to game start", () => {
     expect(centerSquare.textContent).toBe("X");
     expect(centerSquare.className).toBe("squareSelecting");
-  });
-
-  it("Click Go to game start", () => {
-    const gameRendered = render(
-      <Provider store={store}>
-        <Game />
-      </Provider>
-    );
-    expect(gameRendered.container).toMatchSnapshot();
-    const centerSquare = gameRendered.getAllByRole("button")[5];
-    const rightSquare = gameRendered.getAllByRole("button")[6];
-    const GoToGameStart = gameRendered.getByText("Go to game start");
     fireEvent.click(centerSquare);
     fireEvent.click(rightSquare);
     fireEvent.click(GoToGameStart);
@@ -44,17 +38,9 @@ describe("Clicks", () => {
   });
 
   it("Click Go to move #1", () => {
-    const gameRendered = render(
-      <Provider store={store}>
-        <Game />
-      </Provider>
-    );
-    const centerSquare = gameRendered.getAllByRole("button")[5];
-    const rightSquare = gameRendered.getAllByRole("button")[6];
-    fireEvent.click(centerSquare);
-    const GoToMove = gameRendered.getByText("Go to move #1");
     expect(gameRendered.container).toMatchSnapshot();
     fireEvent.click(rightSquare);
+    fireEvent.click(leftSquare);
     fireEvent.click(GoToMove);
     expect(gameRendered.container).toMatchSnapshot();
   });
