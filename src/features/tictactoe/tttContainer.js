@@ -14,6 +14,7 @@ function Game(props) {
   const current = history[stepNumber];
   const reversedHistory = [];
   history.map((ele) => reversedHistory.unshift(ele));
+
   const moves = toggle
     ? reversedHistory.map((step, move) =>
         makeMoves(step, history.length - move - 1)
