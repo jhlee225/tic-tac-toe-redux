@@ -44,6 +44,7 @@ function Square(props) {
           ? "squareSelected"
           : "squareSelecting"
       }
+      role="button"
       id={id}
       onClick={(e) => squareClick(e)}
     >
