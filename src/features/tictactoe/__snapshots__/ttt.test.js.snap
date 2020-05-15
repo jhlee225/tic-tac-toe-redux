@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` 1`] = `
+exports[`Clicks Click Go to game start 1`] = `
 <div>
   <div
     class="game"
@@ -107,13 +107,221 @@ exports[` 1`] = `
 </div>
 `;
 
-exports[`Clicks Click Go to game start 1`] = `<div />`;
+exports[`Clicks Click Go to game start 2`] = `
+<div>
+  <div
+    class="game"
+  >
+    <div
+      class="game-board"
+    >
+      <div>
+        <div
+          class="board-row"
+        >
+          <button
+            class="square"
+            id="0"
+            role="button"
+          />
+          <button
+            class="square"
+            id="1"
+            role="button"
+          />
+          <button
+            class="square"
+            id="2"
+            role="button"
+          />
+        </div>
+      </div>
+      <div>
+        <div
+          class="board-row"
+        >
+          <button
+            class="square"
+            id="3"
+            role="button"
+          />
+          <button
+            class="square"
+            id="4"
+            role="button"
+          />
+          <button
+            class="square"
+            id="5"
+            role="button"
+          />
+        </div>
+      </div>
+      <div>
+        <div
+          class="board-row"
+        >
+          <button
+            class="square"
+            id="6"
+            role="button"
+          />
+          <button
+            class="square"
+            id="7"
+            role="button"
+          />
+          <button
+            class="square"
+            id="8"
+            role="button"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="game-info"
+    >
+      <div>
+        <div>
+          Next player: X
+        </div>
+        <label
+          class="switch"
+        >
+          <input
+            type="checkbox"
+          />
+          <span
+            class="slider round"
+          />
+        </label>
+      </div>
+      <ol>
+        <li>
+          <button>
+            Go to game start
+          </button>
+          <span>
+             
+            
+             
+          </span>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+`;
 
-exports[`Clicks Click Go to move #1 1`] = `<div />`;
+exports[`Clicks Click Go to move #1 1`] = `
+<div>
+  <div
+    class="game"
+  >
+    <div
+      class="game-board"
+    >
+      <div>
+        <div
+          class="board-row"
+        >
+          <button
+            class="square"
+            id="0"
+            role="button"
+          />
+          <button
+            class="square"
+            id="1"
+            role="button"
+          />
+          <button
+            class="square"
+            id="2"
+            role="button"
+          />
+        </div>
+      </div>
+      <div>
+        <div
+          class="board-row"
+        >
+          <button
+            class="square"
+            id="3"
+            role="button"
+          />
+          <button
+            class="square"
+            id="4"
+            role="button"
+          />
+          <button
+            class="square"
+            id="5"
+            role="button"
+          />
+        </div>
+      </div>
+      <div>
+        <div
+          class="board-row"
+        >
+          <button
+            class="square"
+            id="6"
+            role="button"
+          />
+          <button
+            class="square"
+            id="7"
+            role="button"
+          />
+          <button
+            class="square"
+            id="8"
+            role="button"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="game-info"
+    >
+      <div>
+        <div>
+          Next player: X
+        </div>
+        <label
+          class="switch"
+        >
+          <input
+            type="checkbox"
+          />
+          <span
+            class="slider round"
+          />
+        </label>
+      </div>
+      <ol>
+        <li>
+          <button>
+            Go to game start
+          </button>
+          <span>
+             
+            
+             
+          </span>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+`;
 
-exports[`Clicks Click Go to move #1 2`] = `<div />`;
-
-exports[`Renders Game 1`] = `
+exports[`Clicks Click Go to move #1 2`] = `
 <div>
   <div
     class="game"
@@ -223,6 +431,232 @@ exports[`Renders Game 1`] = `
           <span>
              
             B2
+             
+          </span>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Clicks Click Go to move #1 3`] = `
+<div>
+  <div
+    class="game"
+  >
+    <div
+      class="game-board"
+    >
+      <div>
+        <div
+          class="board-row"
+        >
+          <button
+            class="square"
+            id="0"
+            role="button"
+          />
+          <button
+            class="square"
+            id="1"
+            role="button"
+          />
+          <button
+            class="square"
+            id="2"
+            role="button"
+          />
+        </div>
+      </div>
+      <div>
+        <div
+          class="board-row"
+        >
+          <button
+            class="square"
+            id="3"
+            role="button"
+          />
+          <button
+            class="squareSelecting"
+            id="4"
+            role="button"
+          >
+            X
+          </button>
+          <button
+            class="square"
+            id="5"
+            role="button"
+          />
+        </div>
+      </div>
+      <div>
+        <div
+          class="board-row"
+        >
+          <button
+            class="square"
+            id="6"
+            role="button"
+          />
+          <button
+            class="square"
+            id="7"
+            role="button"
+          />
+          <button
+            class="square"
+            id="8"
+            role="button"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="game-info"
+    >
+      <div>
+        <div>
+          Next player: O
+        </div>
+        <label
+          class="switch"
+        >
+          <input
+            type="checkbox"
+          />
+          <span
+            class="slider round"
+          />
+        </label>
+      </div>
+      <ol>
+        <li>
+          <button>
+            Go to game start
+          </button>
+          <span>
+             
+            
+             
+          </span>
+        </li>
+        <li>
+          <button>
+            Go to move #1
+          </button>
+          <span>
+             
+            B2
+             
+          </span>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Renders Game 1`] = `
+<div>
+  <div
+    class="game"
+  >
+    <div
+      class="game-board"
+    >
+      <div>
+        <div
+          class="board-row"
+        >
+          <button
+            class="square"
+            id="0"
+            role="button"
+          />
+          <button
+            class="square"
+            id="1"
+            role="button"
+          />
+          <button
+            class="square"
+            id="2"
+            role="button"
+          />
+        </div>
+      </div>
+      <div>
+        <div
+          class="board-row"
+        >
+          <button
+            class="square"
+            id="3"
+            role="button"
+          />
+          <button
+            class="square"
+            id="4"
+            role="button"
+          />
+          <button
+            class="square"
+            id="5"
+            role="button"
+          />
+        </div>
+      </div>
+      <div>
+        <div
+          class="board-row"
+        >
+          <button
+            class="square"
+            id="6"
+            role="button"
+          />
+          <button
+            class="square"
+            id="7"
+            role="button"
+          />
+          <button
+            class="square"
+            id="8"
+            role="button"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="game-info"
+    >
+      <div>
+        <div>
+          Next player: X
+        </div>
+        <label
+          class="switch"
+        >
+          <input
+            type="checkbox"
+          />
+          <span
+            class="slider round"
+          />
+        </label>
+      </div>
+      <ol>
+        <li>
+          <button>
+            Go to game start
+          </button>
+          <span>
+             
+            
              
           </span>
         </li>

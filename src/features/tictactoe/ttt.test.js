@@ -15,20 +15,18 @@ it("Renders Game", () => {
 });
 
 describe("Clicks", () => {
-  const gameRendered = render(
-    <Provider store={store}>
-      <Game />
-    </Provider>
-  );
-  const centerSquare = gameRendered.getAllByRole("button")[4];
-  const rightSquare = gameRendered.getAllByRole("button")[5];
-  const leftSquare = gameRendered.getAllByRole("button")[3];
-  const GoToGameStart = gameRendered.getByText("Go to game start");
-  expect(gameRendered.container).toMatchSnapshot();
-  fireEvent.click(centerSquare);
-
-  const GoToMove = gameRendered.getByText("Go to move #1");
   it("Click Go to game start", () => {
+    const gameRendered = render(
+      <Provider store={store}>
+        <Game />
+      </Provider>
+    );
+    const centerSquare = gameRendered.getAllByRole("button")[4];
+    const rightSquare = gameRendered.getAllByRole("button")[5];
+    const leftSquare = gameRendered.getAllByRole("button")[3];
+    const GoToGameStart = gameRendered.getByText("Go to game start");
+    expect(gameRendered.container).toMatchSnapshot();
+    fireEvent.click(centerSquare);
     expect(centerSquare.textContent).toBe("X");
     expect(centerSquare.className).toBe("squareSelecting");
     fireEvent.click(centerSquare);
@@ -38,6 +36,18 @@ describe("Clicks", () => {
   });
 
   it("Click Go to move #1", () => {
+    const gameRendered = render(
+      <Provider store={store}>
+        <Game />
+      </Provider>
+    );
+    const centerSquare = gameRendered.getAllByRole("button")[4];
+    const rightSquare = gameRendered.getAllByRole("button")[5];
+    const leftSquare = gameRendered.getAllByRole("button")[3];
+    const GoToGameStart = gameRendered.getByText("Go to game start");
+    expect(gameRendered.container).toMatchSnapshot();
+    fireEvent.click(centerSquare);
+    const GoToMove = gameRendered.getByText("Go to move #1");
     expect(gameRendered.container).toMatchSnapshot();
     fireEvent.click(rightSquare);
     fireEvent.click(leftSquare);
