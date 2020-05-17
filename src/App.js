@@ -4,9 +4,8 @@ import TicTacToe from "./features/tictactoe/tttContainer";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <TicTacToe />
-      </header>
+      <header className="App-header"></header>
+      <TicTacToe />
     </div>
   );
 }

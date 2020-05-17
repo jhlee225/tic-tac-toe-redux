@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render App 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <header
+      class="App-header"
+    />
+    <div
+      class="game"
+    >
+      <div
+        class="game-board"
+      >
+        <div>
+          <div
+            class="board-row"
+          >
+            <button
+              class="square"
+              id="0"
+              role="button"
+            />
+            <button
+              class="square"
+              id="1"
+              role="button"
+            />
+            <button
+              class="square"
+              id="2"
+              role="button"
+            />
+          </div>
+        </div>
+        <div>
+          <div
+            class="board-row"
+          >
+            <button
+              class="square"
+              id="3"
+              role="button"
+            />
+            <button
+              class="square"
+              id="4"
+              role="button"
+            />
+            <button
+              class="square"
+              id="5"
+              role="button"
+            />
+          </div>
+        </div>
+        <div>
+          <div
+            class="board-row"
+          >
+            <button
+              class="square"
+              id="6"
+              role="button"
+            />
+            <button
+              class="square"
+              id="7"
+              role="button"
+            />
+            <button
+              class="square"
+              id="8"
+              role="button"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="game-info"
+      >
+        <div>
+          <div>
+            Next player: X
+          </div>
+          <label
+            class="switch"
+          >
+            <input
+              type="checkbox"
+            />
+            <span
+              class="slider round"
+            />
+          </label>
+        </div>
+        <ol>
+          <li>
+            <button>
+              Go to game start
+            </button>
+            <span>
+               
+              
+               
+            </span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+`;
