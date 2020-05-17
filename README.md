@@ -57,6 +57,10 @@ React 자습서의 Class형 코드를 Hooks 와 Redux를 가미한 코드로 수
 
 Board 재 작성
 
+## `#15 Make Test Code`
+
+간단한 테스트 코드 작성
+
 ## 추후 업데이트 예정...
 
 - Code Refactoring
