@@ -59,7 +59,7 @@ Board 재 작성
 
 ## 추후 업데이트 예정...
 
-- Code Refactorying
+- Code Refactoring
 
 ## GitHub page 배포완료
 
