@@ -1,8 +1,8 @@
 # React-Redux Tic-Tac-Toe Mini Project
 
-React 자습서 (https://ko.reactjs.org/tutorial/tutorial.html) 에 내용 中
+[React 자습서](https://ko.reactjs.org/tutorial/tutorial.html) 에 내용 中
 
-자습서 최종 결과 : https://codepen.io/gaearon/pen/gWWZgR?editors=0010
+[자습서 최종 결과](https://codepen.io/gaearon/pen/gWWZgR?editors=0010)
 
 시간이 더 있거나 새로운 React 기술을 연습하고 싶은 경우 
 
@@ -19,9 +19,18 @@ React 자습서 (https://ko.reactjs.org/tutorial/tutorial.html) 에 내용 中
 
 PR 을 연습하며, React App 깃허브 페이지 배포, React-Redux Tic-Tac-Toe 프로젝트를 시작하였습니다.
 
-## PR 기록
+## 개발
 
-https://github.com/jhlee225/tic-tac-toe-redux/pulls?q=is%3Apr+is%3Aclosed
+- Class + State 였던 기존 코드를 Hooks + Redux를 적용하여 코드를 수정
+
+- Branch를 만들어서 기능을 추가하면서 수정된 코드는 PR 을 통해 Master에 Merge하는 Git Flow 연습
+
+- 간단한 Unit Test 할 수 있는 테스트 코드 작성
+
+
+## 상세 PR 기록
+
+[PR](https://github.com/jhlee225/tic-tac-toe-redux/pulls?q=is%3Apr+is%3Aclosed)
 
 (실수로 Revert 했거나 logo 사진 제거 등 을 제외한 PR 기록)
 
